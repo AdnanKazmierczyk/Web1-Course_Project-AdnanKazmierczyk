@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course-Project</title>
+    <script src="code.js" type="module"></script>
+    <link rel="Stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <!-- navbar-->
+        <nav class="navbar">
+            <h1 class="logo"></h1>
+            <ul class="nav-links">
+                <li xlass="active"><a href="#name">Welcome</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#gaming">Gaming</a></li>
+                <li><a href="#drawing">Drawings</a></li>
+                <li><a class="ctn" href="#instagram">contact</a></li>
+            </ul>
+            <img src="images/menu-button.png" alt="" class="menu-btn">
+        </nav>
+        <div class="header-content">
+            <h2 id="name">Adnan Kazmierczyk</h2>
+            <div class="line"></div>
+            <h1>A personal presentation</h1>
+            <a href="#about" class="ctn">learn more</a>
+        </div>
+    </header>
+    <!-- Events -->
+    <section class="Information">
+        <div class="title">
+            <h1 id="about">About me</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="images/Me.png">
+                <h4>Info</h4>
+                <p>I am 19 years old and come from Poland. I live in zellik and love drawing and gaming as well as
+                    listening to music.</p>
+            </div>
+            <div class="col">
+                <img src="images/Erasmus.jpg">
+                <h4>Education</h4>
+                <p>I finished my high school education and have a diploma in "Boekhouden Informatica". I really like
+                    programming and being creative,
+                    so i have chosen the course "Multimedia and creative technologies at
+                    the Erasmus Hogeschool Brussels in campus Kaai.</p>
+            </div>
+        </div>
+    </section>
+    <section class="Gaming">
+        <div class="Gaming-content">
+            <h1 id="gaming">Gaming</h1>
+            <p>I really love gaming and do so a lot in my free time. Lately i have gotten into a game called "Genshin
+                Impact" and have been enjoying it greatly, the background character is the newest addition to my team.
+            </p>
+            <div class="line"></div>
+        </div>
+    </section>
+    <section class="Drawing">
+        <div class="row">
+            <div class="col content-col">
+                <h1 id="drawing">Drawing</h1>
+                <div class="line"></div>
+                <p>I also love drawing in and have done so from my childhood, i am still a developping artist but i hope
+                    you will like my drawings.</p>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="images/Drawing 1.jpg" alt="">
+                    <img src="images/Drawing 2.jpg" alt="">
+                    <img src="images/Drawing3.jpg" alt="">
+                    <img src="images/Drawing 4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <a href="https://www.instagram.com/akazzzxx.art/?hl=en" class="instagram" id="instagram">instagram</a>
+        <p>Web-Course_Project</p>
+    </section>
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click', () => {
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+
+</html>
